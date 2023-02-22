@@ -59,6 +59,8 @@ namespace Controle_de_Ocorrencias
             if (txtbx_setor.Enabled == false)
             {
                 txtbx_setor.Enabled = true;
+                this.Validate();
+                this.setoresBindingSource.AddNew();
             }
 
             else

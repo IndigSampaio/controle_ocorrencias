@@ -32,6 +32,7 @@
             this.btn_cadSetor = new System.Windows.Forms.Button();
             this.btn_cadVeic = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_cadSetor
@@ -52,17 +53,29 @@
             this.btn_cadVeic.TabIndex = 1;
             this.btn_cadVeic.Text = "Cadastrar Veiculos";
             this.btn_cadVeic.UseVisualStyleBackColor = true;
+            this.btn_cadVeic.Click += new System.EventHandler(this.btn_cadVeic_Click);
             // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Interval = 10;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(12, 342);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(196, 96);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Cadastrar Motorista";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(900, 741);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_cadVeic);
             this.Controls.Add(this.btn_cadSetor);
             this.Name = "Form1";
@@ -78,6 +91,7 @@
         private System.Windows.Forms.Button btn_cadSetor;
         private System.Windows.Forms.Button btn_cadVeic;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

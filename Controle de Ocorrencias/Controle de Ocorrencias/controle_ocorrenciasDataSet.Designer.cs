@@ -28,7 +28,7 @@ namespace Controle_de_Ocorrencias {
         
         private ocorrenciaDataTable tableocorrencia;
         
-        private outros_setoresDataTable tableoutros_setores;
+        private func_outros_setoresDataTable tablefunc_outros_setores;
         
         private setoresDataTable tablesetores;
         
@@ -68,8 +68,8 @@ namespace Controle_de_Ocorrencias {
                 if ((ds.Tables["ocorrencia"] != null)) {
                     base.Tables.Add(new ocorrenciaDataTable(ds.Tables["ocorrencia"]));
                 }
-                if ((ds.Tables["outros_setores"] != null)) {
-                    base.Tables.Add(new outros_setoresDataTable(ds.Tables["outros_setores"]));
+                if ((ds.Tables["func_outros_setores"] != null)) {
+                    base.Tables.Add(new func_outros_setoresDataTable(ds.Tables["func_outros_setores"]));
                 }
                 if ((ds.Tables["setores"] != null)) {
                     base.Tables.Add(new setoresDataTable(ds.Tables["setores"]));
@@ -119,9 +119,9 @@ namespace Controle_de_Ocorrencias {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public outros_setoresDataTable outros_setores {
+        public func_outros_setoresDataTable func_outros_setores {
             get {
-                return this.tableoutros_setores;
+                return this.tablefunc_outros_setores;
             }
         }
         
@@ -218,8 +218,8 @@ namespace Controle_de_Ocorrencias {
                 if ((ds.Tables["ocorrencia"] != null)) {
                     base.Tables.Add(new ocorrenciaDataTable(ds.Tables["ocorrencia"]));
                 }
-                if ((ds.Tables["outros_setores"] != null)) {
-                    base.Tables.Add(new outros_setoresDataTable(ds.Tables["outros_setores"]));
+                if ((ds.Tables["func_outros_setores"] != null)) {
+                    base.Tables.Add(new func_outros_setoresDataTable(ds.Tables["func_outros_setores"]));
                 }
                 if ((ds.Tables["setores"] != null)) {
                     base.Tables.Add(new setoresDataTable(ds.Tables["setores"]));
@@ -272,10 +272,10 @@ namespace Controle_de_Ocorrencias {
                     this.tableocorrencia.InitVars();
                 }
             }
-            this.tableoutros_setores = ((outros_setoresDataTable)(base.Tables["outros_setores"]));
+            this.tablefunc_outros_setores = ((func_outros_setoresDataTable)(base.Tables["func_outros_setores"]));
             if ((initTable == true)) {
-                if ((this.tableoutros_setores != null)) {
-                    this.tableoutros_setores.InitVars();
+                if ((this.tablefunc_outros_setores != null)) {
+                    this.tablefunc_outros_setores.InitVars();
                 }
             }
             this.tablesetores = ((setoresDataTable)(base.Tables["setores"]));
@@ -304,8 +304,8 @@ namespace Controle_de_Ocorrencias {
             base.Tables.Add(this.tablemotorista);
             this.tableocorrencia = new ocorrenciaDataTable();
             base.Tables.Add(this.tableocorrencia);
-            this.tableoutros_setores = new outros_setoresDataTable();
-            base.Tables.Add(this.tableoutros_setores);
+            this.tablefunc_outros_setores = new func_outros_setoresDataTable();
+            base.Tables.Add(this.tablefunc_outros_setores);
             this.tablesetores = new setoresDataTable();
             base.Tables.Add(this.tablesetores);
             this.tableveiculo = new veiculoDataTable();
@@ -326,7 +326,7 @@ namespace Controle_de_Ocorrencias {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private bool ShouldSerializeoutros_setores() {
+        private bool ShouldSerializefunc_outros_setores() {
             return false;
         }
         
@@ -404,7 +404,7 @@ namespace Controle_de_Ocorrencias {
         public delegate void ocorrenciaRowChangeEventHandler(object sender, ocorrenciaRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public delegate void outros_setoresRowChangeEventHandler(object sender, outros_setoresRowChangeEvent e);
+        public delegate void func_outros_setoresRowChangeEventHandler(object sender, func_outros_setoresRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public delegate void setoresRowChangeEventHandler(object sender, setoresRowChangeEvent e);
@@ -585,8 +585,7 @@ namespace Controle_de_Ocorrencias {
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid_motorista}, true));
                 this.columnid_motorista.AutoIncrement = true;
-                this.columnid_motorista.AutoIncrementSeed = -1;
-                this.columnid_motorista.AutoIncrementStep = -1;
+                this.columnid_motorista.AutoIncrementSeed = 1;
                 this.columnid_motorista.AllowDBNull = false;
                 this.columnid_motorista.ReadOnly = true;
                 this.columnid_motorista.Unique = true;
@@ -948,8 +947,7 @@ namespace Controle_de_Ocorrencias {
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid_ocorrencia}, true));
                 this.columnid_ocorrencia.AutoIncrement = true;
-                this.columnid_ocorrencia.AutoIncrementSeed = -1;
-                this.columnid_ocorrencia.AutoIncrementStep = -1;
+                this.columnid_ocorrencia.AutoIncrementSeed = 1;
                 this.columnid_ocorrencia.AllowDBNull = false;
                 this.columnid_ocorrencia.ReadOnly = true;
                 this.columnid_ocorrencia.Unique = true;
@@ -1091,7 +1089,7 @@ namespace Controle_de_Ocorrencias {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class outros_setoresDataTable : global::System.Data.TypedTableBase<outros_setoresRow> {
+        public partial class func_outros_setoresDataTable : global::System.Data.TypedTableBase<func_outros_setoresRow> {
             
             private global::System.Data.DataColumn columnid_fun;
             
@@ -1101,8 +1099,8 @@ namespace Controle_de_Ocorrencias {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public outros_setoresDataTable() {
-                this.TableName = "outros_setores";
+            public func_outros_setoresDataTable() {
+                this.TableName = "func_outros_setores";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -1110,7 +1108,7 @@ namespace Controle_de_Ocorrencias {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal outros_setoresDataTable(global::System.Data.DataTable table) {
+            internal func_outros_setoresDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -1127,7 +1125,7 @@ namespace Controle_de_Ocorrencias {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected outros_setoresDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected func_outros_setoresDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -1167,54 +1165,54 @@ namespace Controle_de_Ocorrencias {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public outros_setoresRow this[int index] {
+            public func_outros_setoresRow this[int index] {
                 get {
-                    return ((outros_setoresRow)(this.Rows[index]));
+                    return ((func_outros_setoresRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event outros_setoresRowChangeEventHandler outros_setoresRowChanging;
+            public event func_outros_setoresRowChangeEventHandler func_outros_setoresRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event outros_setoresRowChangeEventHandler outros_setoresRowChanged;
+            public event func_outros_setoresRowChangeEventHandler func_outros_setoresRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event outros_setoresRowChangeEventHandler outros_setoresRowDeleting;
+            public event func_outros_setoresRowChangeEventHandler func_outros_setoresRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event outros_setoresRowChangeEventHandler outros_setoresRowDeleted;
+            public event func_outros_setoresRowChangeEventHandler func_outros_setoresRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void Addoutros_setoresRow(outros_setoresRow row) {
+            public void Addfunc_outros_setoresRow(func_outros_setoresRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public outros_setoresRow Addoutros_setoresRow(int id_fun, string nome_fun, string setor) {
-                outros_setoresRow rowoutros_setoresRow = ((outros_setoresRow)(this.NewRow()));
+            public func_outros_setoresRow Addfunc_outros_setoresRow(string nome_fun, string setor) {
+                func_outros_setoresRow rowfunc_outros_setoresRow = ((func_outros_setoresRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        id_fun,
+                        null,
                         nome_fun,
                         setor};
-                rowoutros_setoresRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowoutros_setoresRow);
-                return rowoutros_setoresRow;
+                rowfunc_outros_setoresRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowfunc_outros_setoresRow);
+                return rowfunc_outros_setoresRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public outros_setoresRow FindByid_fun(int id_fun) {
-                return ((outros_setoresRow)(this.Rows.Find(new object[] {
+            public func_outros_setoresRow FindByid_fun(int id_fun) {
+                return ((func_outros_setoresRow)(this.Rows.Find(new object[] {
                             id_fun})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                outros_setoresDataTable cln = ((outros_setoresDataTable)(base.Clone()));
+                func_outros_setoresDataTable cln = ((func_outros_setoresDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -1222,7 +1220,7 @@ namespace Controle_de_Ocorrencias {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new outros_setoresDataTable();
+                return new func_outros_setoresDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1244,6 +1242,8 @@ namespace Controle_de_Ocorrencias {
                 base.Columns.Add(this.columnsetor);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid_fun}, true));
+                this.columnid_fun.AutoIncrement = true;
+                this.columnid_fun.AutoIncrementSeed = 1;
                 this.columnid_fun.AllowDBNull = false;
                 this.columnid_fun.Unique = true;
                 this.columnnome_fun.AllowDBNull = false;
@@ -1253,28 +1253,28 @@ namespace Controle_de_Ocorrencias {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public outros_setoresRow Newoutros_setoresRow() {
-                return ((outros_setoresRow)(this.NewRow()));
+            public func_outros_setoresRow Newfunc_outros_setoresRow() {
+                return ((func_outros_setoresRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new outros_setoresRow(builder);
+                return new func_outros_setoresRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(outros_setoresRow);
+                return typeof(func_outros_setoresRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.outros_setoresRowChanged != null)) {
-                    this.outros_setoresRowChanged(this, new outros_setoresRowChangeEvent(((outros_setoresRow)(e.Row)), e.Action));
+                if ((this.func_outros_setoresRowChanged != null)) {
+                    this.func_outros_setoresRowChanged(this, new func_outros_setoresRowChangeEvent(((func_outros_setoresRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1282,8 +1282,8 @@ namespace Controle_de_Ocorrencias {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.outros_setoresRowChanging != null)) {
-                    this.outros_setoresRowChanging(this, new outros_setoresRowChangeEvent(((outros_setoresRow)(e.Row)), e.Action));
+                if ((this.func_outros_setoresRowChanging != null)) {
+                    this.func_outros_setoresRowChanging(this, new func_outros_setoresRowChangeEvent(((func_outros_setoresRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1291,8 +1291,8 @@ namespace Controle_de_Ocorrencias {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.outros_setoresRowDeleted != null)) {
-                    this.outros_setoresRowDeleted(this, new outros_setoresRowChangeEvent(((outros_setoresRow)(e.Row)), e.Action));
+                if ((this.func_outros_setoresRowDeleted != null)) {
+                    this.func_outros_setoresRowDeleted(this, new func_outros_setoresRowChangeEvent(((func_outros_setoresRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1300,14 +1300,14 @@ namespace Controle_de_Ocorrencias {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.outros_setoresRowDeleting != null)) {
-                    this.outros_setoresRowDeleting(this, new outros_setoresRowChangeEvent(((outros_setoresRow)(e.Row)), e.Action));
+                if ((this.func_outros_setoresRowDeleting != null)) {
+                    this.func_outros_setoresRowDeleting(this, new func_outros_setoresRowChangeEvent(((func_outros_setoresRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void Removeoutros_setoresRow(outros_setoresRow row) {
+            public void Removefunc_outros_setoresRow(func_outros_setoresRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -1334,7 +1334,7 @@ namespace Controle_de_Ocorrencias {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "outros_setoresDataTable";
+                attribute2.FixedValue = "func_outros_setoresDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -1520,8 +1520,7 @@ namespace Controle_de_Ocorrencias {
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid_setores}, true));
                 this.columnid_setores.AutoIncrement = true;
-                this.columnid_setores.AutoIncrementSeed = -1;
-                this.columnid_setores.AutoIncrementStep = -1;
+                this.columnid_setores.AutoIncrementSeed = 1;
                 this.columnid_setores.AllowDBNull = false;
                 this.columnid_setores.ReadOnly = true;
                 this.columnid_setores.Unique = true;
@@ -1811,8 +1810,7 @@ namespace Controle_de_Ocorrencias {
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid_motivo}, true));
                 this.columnid_motivo.AutoIncrement = true;
-                this.columnid_motivo.AutoIncrementSeed = -1;
-                this.columnid_motivo.AutoIncrementStep = -1;
+                this.columnid_motivo.AutoIncrementSeed = 1;
                 this.columnid_motivo.AllowDBNull = false;
                 this.columnid_motivo.ReadOnly = true;
                 this.columnid_motivo.Unique = true;
@@ -2246,25 +2244,25 @@ namespace Controle_de_Ocorrencias {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class outros_setoresRow : global::System.Data.DataRow {
+        public partial class func_outros_setoresRow : global::System.Data.DataRow {
             
-            private outros_setoresDataTable tableoutros_setores;
+            private func_outros_setoresDataTable tablefunc_outros_setores;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal outros_setoresRow(global::System.Data.DataRowBuilder rb) : 
+            internal func_outros_setoresRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableoutros_setores = ((outros_setoresDataTable)(this.Table));
+                this.tablefunc_outros_setores = ((func_outros_setoresDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public int id_fun {
                 get {
-                    return ((int)(this[this.tableoutros_setores.id_funColumn]));
+                    return ((int)(this[this.tablefunc_outros_setores.id_funColumn]));
                 }
                 set {
-                    this[this.tableoutros_setores.id_funColumn] = value;
+                    this[this.tablefunc_outros_setores.id_funColumn] = value;
                 }
             }
             
@@ -2272,10 +2270,10 @@ namespace Controle_de_Ocorrencias {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public string nome_fun {
                 get {
-                    return ((string)(this[this.tableoutros_setores.nome_funColumn]));
+                    return ((string)(this[this.tablefunc_outros_setores.nome_funColumn]));
                 }
                 set {
-                    this[this.tableoutros_setores.nome_funColumn] = value;
+                    this[this.tablefunc_outros_setores.nome_funColumn] = value;
                 }
             }
             
@@ -2284,27 +2282,27 @@ namespace Controle_de_Ocorrencias {
             public string setor {
                 get {
                     try {
-                        return ((string)(this[this.tableoutros_setores.setorColumn]));
+                        return ((string)(this[this.tablefunc_outros_setores.setorColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'setor\' na tabela \'outros_setores\' é DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'setor\' na tabela \'func_outros_setores\' é DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableoutros_setores.setorColumn] = value;
+                    this[this.tablefunc_outros_setores.setorColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool IssetorNull() {
-                return this.IsNull(this.tableoutros_setores.setorColumn);
+                return this.IsNull(this.tablefunc_outros_setores.setorColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void SetsetorNull() {
-                this[this.tableoutros_setores.setorColumn] = global::System.Convert.DBNull;
+                this[this.tablefunc_outros_setores.setorColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -2499,22 +2497,22 @@ namespace Controle_de_Ocorrencias {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public class outros_setoresRowChangeEvent : global::System.EventArgs {
+        public class func_outros_setoresRowChangeEvent : global::System.EventArgs {
             
-            private outros_setoresRow eventRow;
+            private func_outros_setoresRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public outros_setoresRowChangeEvent(outros_setoresRow row, global::System.Data.DataRowAction action) {
+            public func_outros_setoresRowChangeEvent(func_outros_setoresRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public outros_setoresRow Row {
+            public func_outros_setoresRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -2773,11 +2771,17 @@ SELECT id_motorista, motorista, cnh, ativo FROM motorista WHERE (id_motorista = 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT id_motorista, motorista, cnh, ativo FROM dbo.motorista";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT id_motorista, motorista, cnh, ativo\r\nFROM     motorista\r\nWHERE  (motorista" +
+                " LIKE \'%\' + @Param1 + \'%\')";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Param1", global::System.Data.SqlDbType.VarChar, 250, global::System.Data.ParameterDirection.Input, 0, 0, "motorista", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2802,6 +2806,25 @@ SELECT id_motorista, motorista, cnh, ativo FROM motorista WHERE (id_motorista = 
             controle_ocorrenciasDataSet.motoristaDataTable dataTable = new controle_ocorrenciasDataSet.motoristaDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillByconsultMoto(controle_ocorrenciasDataSet.motoristaDataTable dataTable, string Param1) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((Param1 == null)) {
+                throw new global::System.ArgumentNullException("Param1");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(Param1));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3490,7 +3513,7 @@ SELECT id_ocorrencia, data_ocorrencia, veiculo, motorista, setor_motivo, fun_out
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class outros_setoresTableAdapter : global::System.ComponentModel.Component {
+    public partial class func_outros_setoresTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -3504,7 +3527,7 @@ SELECT id_ocorrencia, data_ocorrencia, veiculo, motorista, setor_motivo, fun_out
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public outros_setoresTableAdapter() {
+        public func_outros_setoresTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -3601,7 +3624,7 @@ SELECT id_ocorrencia, data_ocorrencia, veiculo, motorista, setor_motivo, fun_out
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "outros_setores";
+            tableMapping.DataSetTable = "func_outros_setores";
             tableMapping.ColumnMappings.Add("id_fun", "id_fun");
             tableMapping.ColumnMappings.Add("nome_fun", "nome_fun");
             tableMapping.ColumnMappings.Add("setor", "setor");
@@ -3660,7 +3683,7 @@ SELECT id_fun, nome_fun, setor FROM outros_setores WHERE (id_fun = @id_fun)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(controle_ocorrenciasDataSet.outros_setoresDataTable dataTable) {
+        public virtual int Fill(controle_ocorrenciasDataSet.func_outros_setoresDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -3673,9 +3696,9 @@ SELECT id_fun, nome_fun, setor FROM outros_setores WHERE (id_fun = @id_fun)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual controle_ocorrenciasDataSet.outros_setoresDataTable GetData() {
+        public virtual controle_ocorrenciasDataSet.func_outros_setoresDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            controle_ocorrenciasDataSet.outros_setoresDataTable dataTable = new controle_ocorrenciasDataSet.outros_setoresDataTable();
+            controle_ocorrenciasDataSet.func_outros_setoresDataTable dataTable = new controle_ocorrenciasDataSet.func_outros_setoresDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -3683,7 +3706,7 @@ SELECT id_fun, nome_fun, setor FROM outros_setores WHERE (id_fun = @id_fun)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(controle_ocorrenciasDataSet.outros_setoresDataTable dataTable) {
+        public virtual int Update(controle_ocorrenciasDataSet.func_outros_setoresDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
@@ -3691,7 +3714,7 @@ SELECT id_fun, nome_fun, setor FROM outros_setores WHERE (id_fun = @id_fun)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(controle_ocorrenciasDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "outros_setores");
+            return this.Adapter.Update(dataSet, "func_outros_setores");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4352,11 +4375,23 @@ SELECT id_motivo, veiculo, placa FROM veiculo WHERE (id_motivo = @id_motivo)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[3];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT id_motivo, veiculo, placa FROM dbo.veiculo";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT id_motivo, veiculo, placa\r\nFROM     veiculo\r\nWHERE  (placa LIKE \'%\' + @Par" +
+                "am1 + \'%\')";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Param1", global::System.Data.SqlDbType.VarChar, 250, global::System.Data.ParameterDirection.Input, 0, 0, "placa", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "SELECT id_motivo, veiculo, placa\r\nFROM     veiculo\r\nWHERE  (veiculo LIKE \'%\' + @P" +
+                "aram1 + \'%\')";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Param1", global::System.Data.SqlDbType.VarChar, 250, global::System.Data.ParameterDirection.Input, 0, 0, "veiculo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4381,6 +4416,44 @@ SELECT id_motivo, veiculo, placa FROM veiculo WHERE (id_motivo = @id_motivo)";
             controle_ocorrenciasDataSet.veiculoDataTable dataTable = new controle_ocorrenciasDataSet.veiculoDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillByconsultPlaca(controle_ocorrenciasDataSet.veiculoDataTable dataTable, string Param1) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((Param1 == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(Param1));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillByconsultveiculo(controle_ocorrenciasDataSet.veiculoDataTable dataTable, string Param1) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((Param1 == null)) {
+                throw new global::System.ArgumentNullException("Param1");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(Param1));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4555,7 +4628,7 @@ SELECT id_motivo, veiculo, placa FROM veiculo WHERE (id_motivo = @id_motivo)";
         
         private ocorrenciaTableAdapter _ocorrenciaTableAdapter;
         
-        private outros_setoresTableAdapter _outros_setoresTableAdapter;
+        private func_outros_setoresTableAdapter _func_outros_setoresTableAdapter;
         
         private setoresTableAdapter _setoresTableAdapter;
         
@@ -4609,12 +4682,12 @@ SELECT id_motivo, veiculo, placa FROM veiculo WHERE (id_motivo = @id_motivo)";
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public outros_setoresTableAdapter outros_setoresTableAdapter {
+        public func_outros_setoresTableAdapter func_outros_setoresTableAdapter {
             get {
-                return this._outros_setoresTableAdapter;
+                return this._func_outros_setoresTableAdapter;
             }
             set {
-                this._outros_setoresTableAdapter = value;
+                this._func_outros_setoresTableAdapter = value;
             }
         }
         
@@ -4673,9 +4746,9 @@ SELECT id_motivo, veiculo, placa FROM veiculo WHERE (id_motivo = @id_motivo)";
                             && (this._ocorrenciaTableAdapter.Connection != null))) {
                     return this._ocorrenciaTableAdapter.Connection;
                 }
-                if (((this._outros_setoresTableAdapter != null) 
-                            && (this._outros_setoresTableAdapter.Connection != null))) {
-                    return this._outros_setoresTableAdapter.Connection;
+                if (((this._func_outros_setoresTableAdapter != null) 
+                            && (this._func_outros_setoresTableAdapter.Connection != null))) {
+                    return this._func_outros_setoresTableAdapter.Connection;
                 }
                 if (((this._setoresTableAdapter != null) 
                             && (this._setoresTableAdapter.Connection != null))) {
@@ -4704,7 +4777,7 @@ SELECT id_motivo, veiculo, placa FROM veiculo WHERE (id_motivo = @id_motivo)";
                 if ((this._ocorrenciaTableAdapter != null)) {
                     count = (count + 1);
                 }
-                if ((this._outros_setoresTableAdapter != null)) {
+                if ((this._func_outros_setoresTableAdapter != null)) {
                     count = (count + 1);
                 }
                 if ((this._setoresTableAdapter != null)) {
@@ -4742,12 +4815,12 @@ SELECT id_motivo, veiculo, placa FROM veiculo WHERE (id_motivo = @id_motivo)";
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._outros_setoresTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.outros_setores.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._func_outros_setoresTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.func_outros_setores.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._outros_setoresTableAdapter.Update(updatedRows));
+                    result = (result + this._func_outros_setoresTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -4795,11 +4868,11 @@ SELECT id_motivo, veiculo, placa FROM veiculo WHERE (id_motivo = @id_motivo)";
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._outros_setoresTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.outros_setores.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._func_outros_setoresTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.func_outros_setores.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._outros_setoresTableAdapter.Update(addedRows));
+                    result = (result + this._func_outros_setoresTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -4845,11 +4918,11 @@ SELECT id_motivo, veiculo, placa FROM veiculo WHERE (id_motivo = @id_motivo)";
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._outros_setoresTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.outros_setores.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._func_outros_setoresTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.func_outros_setores.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._outros_setoresTableAdapter.Update(deletedRows));
+                    result = (result + this._func_outros_setoresTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -4918,8 +4991,8 @@ SELECT id_motivo, veiculo, placa FROM veiculo WHERE (id_motivo = @id_motivo)";
                 throw new global::System.ArgumentException("Todos os TableAdapters gerenciados por um TableAdapterManager devem usar a mesma " +
                         "cadeia de conexão.");
             }
-            if (((this._outros_setoresTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._outros_setoresTableAdapter.Connection) == false))) {
+            if (((this._func_outros_setoresTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._func_outros_setoresTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("Todos os TableAdapters gerenciados por um TableAdapterManager devem usar a mesma " +
                         "cadeia de conexão.");
             }
@@ -4983,13 +5056,13 @@ SELECT id_motivo, veiculo, placa FROM veiculo WHERE (id_motivo = @id_motivo)";
                         adaptersWithAcceptChangesDuringUpdate.Add(this._ocorrenciaTableAdapter.Adapter);
                     }
                 }
-                if ((this._outros_setoresTableAdapter != null)) {
-                    revertConnections.Add(this._outros_setoresTableAdapter, this._outros_setoresTableAdapter.Connection);
-                    this._outros_setoresTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._outros_setoresTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._outros_setoresTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._outros_setoresTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._outros_setoresTableAdapter.Adapter);
+                if ((this._func_outros_setoresTableAdapter != null)) {
+                    revertConnections.Add(this._func_outros_setoresTableAdapter, this._func_outros_setoresTableAdapter.Connection);
+                    this._func_outros_setoresTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._func_outros_setoresTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._func_outros_setoresTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._func_outros_setoresTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._func_outros_setoresTableAdapter.Adapter);
                     }
                 }
                 if ((this._setoresTableAdapter != null)) {
@@ -5076,9 +5149,9 @@ SELECT id_motivo, veiculo, placa FROM veiculo WHERE (id_motivo = @id_motivo)";
                     this._ocorrenciaTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._ocorrenciaTableAdapter]));
                     this._ocorrenciaTableAdapter.Transaction = null;
                 }
-                if ((this._outros_setoresTableAdapter != null)) {
-                    this._outros_setoresTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._outros_setoresTableAdapter]));
-                    this._outros_setoresTableAdapter.Transaction = null;
+                if ((this._func_outros_setoresTableAdapter != null)) {
+                    this._func_outros_setoresTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._func_outros_setoresTableAdapter]));
+                    this._func_outros_setoresTableAdapter.Transaction = null;
                 }
                 if ((this._setoresTableAdapter != null)) {
                     this._setoresTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._setoresTableAdapter]));

@@ -10,3 +10,7 @@ C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrenc
 C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle de Ocorrencias.exe
 C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle de Ocorrencias.pdb
 C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle_de_Ocorrencias.frm_consulSetor.resources
+C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle_de_Ocorrencias.frm_cadVeiculo.resources
+C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle_de_Ocorrencias.frm_consultVeiculo.resources
+C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle_de_Ocorrencias.frm_cadMotorista.resources
+C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle_de_Ocorrencias.frm_consultMotorista.resources

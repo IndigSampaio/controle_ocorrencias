@@ -63,7 +63,6 @@
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.motoristaTableAdapter = null;
             this.tableAdapterManager.ocorrenciaTableAdapter = null;
-            this.tableAdapterManager.outros_setoresTableAdapter = null;
             this.tableAdapterManager.setoresTableAdapter = this.setoresTableAdapter;
             this.tableAdapterManager.UpdateOrder = Controle_de_Ocorrencias.controle_ocorrenciasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.veiculoTableAdapter = null;
@@ -71,11 +70,14 @@
             // setoresDataGridView
             // 
             this.setoresDataGridView.AutoGenerateColumns = false;
+            this.setoresDataGridView.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.setoresDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.setoresDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.setoresDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
             this.setoresDataGridView.DataSource = this.setoresBindingSource;
+            this.setoresDataGridView.GridColor = System.Drawing.Color.WhiteSmoke;
             this.setoresDataGridView.Location = new System.Drawing.Point(15, 137);
             this.setoresDataGridView.Name = "setoresDataGridView";
             this.setoresDataGridView.RowTemplate.Height = 24;

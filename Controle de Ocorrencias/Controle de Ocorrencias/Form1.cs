@@ -27,5 +27,17 @@ namespace Controle_de_Ocorrencias
             frm_cadSetor cadSetor = new frm_cadSetor();
             cadSetor.ShowDialog();
         }
+
+        private void btn_cadVeic_Click(object sender, EventArgs e)
+        {
+            frm_cadVeiculo cadVeiculo = new frm_cadVeiculo();
+            cadVeiculo.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frm_cadMotorista cadMotorista = new frm_cadMotorista();
+            cadMotorista.ShowDialog();
+        }
     }
 }
