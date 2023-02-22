@@ -30,7 +30,7 @@ namespace Controle_de_Ocorrencias
             // TODO: esta linha de código carrega dados na tabela 'controle_ocorrenciasDataSet.setores'. Você pode movê-la ou removê-la conforme necessário.
             this.setoresTableAdapter.Fill(this.controle_ocorrenciasDataSet.setores);
             // TODO: esta linha de código carrega dados na tabela 'controle_ocorrenciasDataSet.motorista'. Você pode movê-la ou removê-la conforme necessário.
-            this.motoristaTableAdapter.Fill(this.controle_ocorrenciasDataSet.motorista);
+            //this.motoristaTableAdapter.Fill(this.controle_ocorrenciasDataSet.motorista);
             // TODO: esta linha de código carrega dados na tabela 'controle_ocorrenciasDataSet.veiculo'. Você pode movê-la ou removê-la conforme necessário.
             this.veiculoTableAdapter.Fill(this.controle_ocorrenciasDataSet.veiculo);
             // TODO: esta linha de código carrega dados na tabela 'controle_ocorrenciasDataSet.ocorrencia'. Você pode movê-la ou removê-la conforme necessário.

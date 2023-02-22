@@ -2,7 +2,6 @@ C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrenc
 C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\bin\Debug\Controle de Ocorrencias.exe
 C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\bin\Debug\Controle de Ocorrencias.pdb
 C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle de Ocorrencias.csprojAssemblyReference.cache
-C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle_de_Ocorrencias.Form1.resources
 C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle_de_Ocorrencias.frm_cadSetor.resources
 C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle_de_Ocorrencias.Properties.Resources.resources
 C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle de Ocorrencias.csproj.GenerateResource.cache
@@ -17,3 +16,10 @@ C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrenc
 C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle_de_Ocorrencias.frm_cadFun_outrosSetores.resources
 C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle_de_Ocorrencias.frm_consultFunc_outrosSetores.resources
 C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle_de_Ocorrencias.frm_abrirOcorrencia.resources
+C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\bin\Debug\Controle de Ocorrencias.exe.manifest
+C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\bin\Debug\Controle de Ocorrencias.application
+C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle de Ocorrencias.TrustInfo.xml
+C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle de Ocorrencias.exe.manifest
+C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle de Ocorrencias.application
+C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle_de_Ocorrencias.frm_menu.resources
+C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle_de_Ocorrencias.frm_consulOcorrencia.resources

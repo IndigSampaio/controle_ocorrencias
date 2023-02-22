@@ -30,25 +30,28 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtbx_nomeMoto = new System.Windows.Forms.TextBox();
-            this.txtbx_cnhMoto = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.chkbx_ativo = new System.Windows.Forms.CheckBox();
             this.btn_consultar = new System.Windows.Forms.Button();
             this.btn_salvar = new System.Windows.Forms.Button();
             this.btn_novo = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.btn_sair = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtbx_nomeMoto = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.chkbx_ativo = new System.Windows.Forms.CheckBox();
+            this.cmbbx_setorMoto = new System.Windows.Forms.ComboBox();
             this.motoristaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.controle_ocorrenciasDataSet = new Controle_de_Ocorrencias.controle_ocorrenciasDataSet();
             this.motoristaTableAdapter = new Controle_de_Ocorrencias.controle_ocorrenciasDataSetTableAdapters.motoristaTableAdapter();
             this.tableAdapterManager = new Controle_de_Ocorrencias.controle_ocorrenciasDataSetTableAdapters.TableAdapterManager();
+            this.setormotoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.setor_motoTableAdapter = new Controle_de_Ocorrencias.controle_ocorrenciasDataSetTableAdapters.setor_motoTableAdapter();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.motoristaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.controle_ocorrenciasDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.setormotoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -62,73 +65,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(570, 100);
             this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.btn_sair);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(470, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(100, 100);
-            this.panel2.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(45, 158);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(179, 24);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Nome do motorista :";
-            // 
-            // txtbx_nomeMoto
-            // 
-            this.txtbx_nomeMoto.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.motoristaBindingSource, "motorista", true));
-            this.txtbx_nomeMoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_nomeMoto.Location = new System.Drawing.Point(239, 154);
-            this.txtbx_nomeMoto.Name = "txtbx_nomeMoto";
-            this.txtbx_nomeMoto.Size = new System.Drawing.Size(272, 28);
-            this.txtbx_nomeMoto.TabIndex = 2;
-            // 
-            // txtbx_cnhMoto
-            // 
-            this.txtbx_cnhMoto.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.motoristaBindingSource, "cnh", true));
-            this.txtbx_cnhMoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_cnhMoto.Location = new System.Drawing.Point(239, 218);
-            this.txtbx_cnhMoto.Name = "txtbx_cnhMoto";
-            this.txtbx_cnhMoto.Size = new System.Drawing.Size(272, 28);
-            this.txtbx_cnhMoto.TabIndex = 6;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(56, 222);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(168, 24);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "CNH do Motorista :";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(86, 279);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(138, 24);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Motorista ativo :";
-            // 
-            // chkbx_ativo
-            // 
-            this.chkbx_ativo.AutoSize = true;
-            this.chkbx_ativo.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.motoristaBindingSource, "ativo", true));
-            this.chkbx_ativo.Location = new System.Drawing.Point(239, 285);
-            this.chkbx_ativo.Name = "chkbx_ativo";
-            this.chkbx_ativo.Size = new System.Drawing.Size(18, 17);
-            this.chkbx_ativo.TabIndex = 8;
-            this.chkbx_ativo.UseVisualStyleBackColor = true;
             // 
             // btn_consultar
             // 
@@ -169,6 +105,15 @@
             this.btn_novo.UseVisualStyleBackColor = true;
             this.btn_novo.Click += new System.EventHandler(this.btn_novo_Click);
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btn_sair);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(470, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(100, 100);
+            this.panel2.TabIndex = 0;
+            // 
             // btn_sair
             // 
             this.btn_sair.Dock = System.Windows.Forms.DockStyle.Right;
@@ -181,6 +126,67 @@
             this.btn_sair.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_sair.UseVisualStyleBackColor = true;
             this.btn_sair.Click += new System.EventHandler(this.btn_sair_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(45, 158);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(179, 24);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Nome do motorista :";
+            // 
+            // txtbx_nomeMoto
+            // 
+            this.txtbx_nomeMoto.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.motoristaBindingSource, "motorista", true));
+            this.txtbx_nomeMoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_nomeMoto.Location = new System.Drawing.Point(239, 154);
+            this.txtbx_nomeMoto.Name = "txtbx_nomeMoto";
+            this.txtbx_nomeMoto.Size = new System.Drawing.Size(272, 28);
+            this.txtbx_nomeMoto.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(56, 222);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(171, 24);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Setor do Motorista :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(86, 279);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(138, 24);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Motorista ativo :";
+            // 
+            // chkbx_ativo
+            // 
+            this.chkbx_ativo.AutoSize = true;
+            this.chkbx_ativo.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.motoristaBindingSource, "ativo", true));
+            this.chkbx_ativo.Location = new System.Drawing.Point(239, 285);
+            this.chkbx_ativo.Name = "chkbx_ativo";
+            this.chkbx_ativo.Size = new System.Drawing.Size(18, 17);
+            this.chkbx_ativo.TabIndex = 8;
+            this.chkbx_ativo.UseVisualStyleBackColor = true;
+            // 
+            // cmbbx_setorMoto
+            // 
+            this.cmbbx_setorMoto.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.motoristaBindingSource, "setor_moto", true));
+            this.cmbbx_setorMoto.DataSource = this.setormotoBindingSource;
+            this.cmbbx_setorMoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbbx_setorMoto.FormattingEnabled = true;
+            this.cmbbx_setorMoto.Location = new System.Drawing.Point(239, 219);
+            this.cmbbx_setorMoto.Name = "cmbbx_setorMoto";
+            this.cmbbx_setorMoto.Size = new System.Drawing.Size(272, 30);
+            this.cmbbx_setorMoto.TabIndex = 9;
+            this.cmbbx_setorMoto.SelectedIndexChanged += new System.EventHandler(this.cmbbx_setorMoto_SelectedIndexChanged);
             // 
             // motoristaBindingSource
             // 
@@ -202,9 +208,19 @@
             this.tableAdapterManager.func_outros_setoresTableAdapter = null;
             this.tableAdapterManager.motoristaTableAdapter = this.motoristaTableAdapter;
             this.tableAdapterManager.ocorrenciaTableAdapter = null;
+            this.tableAdapterManager.setor_motoTableAdapter = null;
             this.tableAdapterManager.setoresTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = Controle_de_Ocorrencias.controle_ocorrenciasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.veiculoTableAdapter = null;
+            // 
+            // setormotoBindingSource
+            // 
+            this.setormotoBindingSource.DataMember = "setor_moto";
+            this.setormotoBindingSource.DataSource = this.controle_ocorrenciasDataSet;
+            // 
+            // setor_motoTableAdapter
+            // 
+            this.setor_motoTableAdapter.ClearBeforeFill = true;
             // 
             // frm_cadMotorista
             // 
@@ -212,9 +228,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(570, 349);
             this.ControlBox = false;
+            this.Controls.Add(this.cmbbx_setorMoto);
             this.Controls.Add(this.chkbx_ativo);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtbx_cnhMoto);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtbx_nomeMoto);
             this.Controls.Add(this.label1);
@@ -227,6 +243,7 @@
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.motoristaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.controle_ocorrenciasDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.setormotoBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -246,9 +263,11 @@
         private System.Windows.Forms.BindingSource motoristaBindingSource;
         private controle_ocorrenciasDataSetTableAdapters.motoristaTableAdapter motoristaTableAdapter;
         private controle_ocorrenciasDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.TextBox txtbx_cnhMoto;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox chkbx_ativo;
+        private System.Windows.Forms.ComboBox cmbbx_setorMoto;
+        private System.Windows.Forms.BindingSource setormotoBindingSource;
+        private controle_ocorrenciasDataSetTableAdapters.setor_motoTableAdapter setor_motoTableAdapter;
     }
 }

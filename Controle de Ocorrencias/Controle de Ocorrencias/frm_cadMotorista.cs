@@ -25,13 +25,15 @@ namespace Controle_de_Ocorrencias
 
         private void frm_cadMotorista_Load(object sender, EventArgs e)
         {
+            // TODO: esta linha de código carrega dados na tabela 'controle_ocorrenciasDataSet.setor_moto'. Você pode movê-la ou removê-la conforme necessário.
+            this.setor_motoTableAdapter.Fill(this.controle_ocorrenciasDataSet.setor_moto);
             // TODO: esta linha de código carrega dados na tabela 'controle_ocorrenciasDataSet.motorista'. Você pode movê-la ou removê-la conforme necessário.
             this.motoristaTableAdapter.Fill(this.controle_ocorrenciasDataSet.motorista);
 
-            txtbx_cnhMoto.Enabled = false;
+            cmbbx_setorMoto.Enabled = false;
             txtbx_nomeMoto.Enabled = false;
             chkbx_ativo.Enabled = false;
-            txtbx_cnhMoto.Text = "";
+            cmbbx_setorMoto.Text = "";
             txtbx_nomeMoto.Text = "";
             chkbx_ativo.Checked = false;
         }
@@ -39,7 +41,7 @@ namespace Controle_de_Ocorrencias
         private void btn_novo_Click(object sender, EventArgs e)
         {
 
-            if(txtbx_cnhMoto.Enabled == true || txtbx_nomeMoto.Enabled == true)
+            if(cmbbx_setorMoto.Enabled == true || txtbx_nomeMoto.Enabled == true)
             {
                 MessageBox.Show("Nao e possivel adicionar um novo registro enquanto esse nao foi finalzado", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
@@ -48,7 +50,7 @@ namespace Controle_de_Ocorrencias
             {
                 this.Validate();
                 this.motoristaBindingSource.AddNew();
-                txtbx_cnhMoto.Enabled = true;
+                cmbbx_setorMoto.Enabled = true;
                 txtbx_nomeMoto.Enabled = true;
                 chkbx_ativo.Enabled = true;
             }
@@ -69,10 +71,10 @@ namespace Controle_de_Ocorrencias
                 this.motoristaBindingSource.EndEdit();
                 this.tableAdapterManager.UpdateAll(this.controle_ocorrenciasDataSet);
                 MessageBox.Show("Registro salvo com sucesso", "Salvo com sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txtbx_cnhMoto.Enabled = false;
+                cmbbx_setorMoto.Enabled = false;
                 txtbx_nomeMoto.Enabled = false;
                 chkbx_ativo.Enabled = false;
-                txtbx_cnhMoto.Text = "";
+                cmbbx_setorMoto.Text = "";
                 txtbx_nomeMoto.Text = "";
                 chkbx_ativo.Checked = false;
             }
@@ -81,7 +83,7 @@ namespace Controle_de_Ocorrencias
 
         private void btn_sair_Click(object sender, EventArgs e)
         {
-            if (txtbx_cnhMoto.Enabled == true || txtbx_nomeMoto.Enabled == true)
+            if (cmbbx_setorMoto.Enabled == true || txtbx_nomeMoto.Enabled == true)
             {
                 if(MessageBox.Show("Deseja realmente sair?\nO registro nao salvo, sera perdido!", "Cuidado", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
                 {
@@ -99,6 +101,11 @@ namespace Controle_de_Ocorrencias
         {
             frm_consultMotorista consultMotorista = new frm_consultMotorista();
             consultMotorista.Show();
+        }
+
+        private void cmbbx_setorMoto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

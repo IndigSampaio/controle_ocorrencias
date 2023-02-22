@@ -61,8 +61,10 @@
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.func_outros_setoresTableAdapter = null;
             this.tableAdapterManager.motoristaTableAdapter = null;
             this.tableAdapterManager.ocorrenciaTableAdapter = null;
+            this.tableAdapterManager.setor_motoTableAdapter = null;
             this.tableAdapterManager.setoresTableAdapter = this.setoresTableAdapter;
             this.tableAdapterManager.UpdateOrder = Controle_de_Ocorrencias.controle_ocorrenciasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.veiculoTableAdapter = null;
@@ -70,7 +72,7 @@
             // setoresDataGridView
             // 
             this.setoresDataGridView.AutoGenerateColumns = false;
-            this.setoresDataGridView.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.setoresDataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
             this.setoresDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.setoresDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.setoresDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {

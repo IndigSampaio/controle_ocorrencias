@@ -39,7 +39,6 @@
             this.motoristaDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.controle_ocorrenciasDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.motoristaBindingSource)).BeginInit();
@@ -90,6 +89,7 @@
             this.tableAdapterManager.func_outros_setoresTableAdapter = null;
             this.tableAdapterManager.motoristaTableAdapter = this.motoristaTableAdapter;
             this.tableAdapterManager.ocorrenciaTableAdapter = null;
+            this.tableAdapterManager.setor_motoTableAdapter = null;
             this.tableAdapterManager.setoresTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = Controle_de_Ocorrencias.controle_ocorrenciasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.veiculoTableAdapter = null;
@@ -97,13 +97,12 @@
             // motoristaDataGridView
             // 
             this.motoristaDataGridView.AutoGenerateColumns = false;
-            this.motoristaDataGridView.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.motoristaDataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
             this.motoristaDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.motoristaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.motoristaDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
             this.dataGridViewCheckBoxColumn1});
             this.motoristaDataGridView.DataSource = this.motoristaBindingSource;
             this.motoristaDataGridView.GridColor = System.Drawing.Color.WhiteSmoke;
@@ -125,12 +124,6 @@
             this.dataGridViewTextBoxColumn2.DataPropertyName = "motorista";
             this.dataGridViewTextBoxColumn2.HeaderText = "motorista";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "cnh";
-            this.dataGridViewTextBoxColumn3.HeaderText = "cnh";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // dataGridViewCheckBoxColumn1
             // 

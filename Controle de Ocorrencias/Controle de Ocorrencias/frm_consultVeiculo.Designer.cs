@@ -30,15 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             this.veiculoDataGridView = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtbx_veiculo = new System.Windows.Forms.TextBox();
-            this.txtbx_placa = new System.Windows.Forms.TextBox();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.veiculoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.controle_ocorrenciasDataSet = new Controle_de_Ocorrencias.controle_ocorrenciasDataSet();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtbx_veiculo = new System.Windows.Forms.TextBox();
+            this.txtbx_placa = new System.Windows.Forms.TextBox();
             this.veiculoTableAdapter = new Controle_de_Ocorrencias.controle_ocorrenciasDataSetTableAdapters.veiculoTableAdapter();
             this.tableAdapterManager = new Controle_de_Ocorrencias.controle_ocorrenciasDataSetTableAdapters.TableAdapterManager();
             ((System.ComponentModel.ISupportInitialize)(this.veiculoDataGridView)).BeginInit();
@@ -49,7 +49,7 @@
             // veiculoDataGridView
             // 
             this.veiculoDataGridView.AutoGenerateColumns = false;
-            this.veiculoDataGridView.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.veiculoDataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
             this.veiculoDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.veiculoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.veiculoDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -63,6 +63,35 @@
             this.veiculoDataGridView.RowTemplate.Height = 24;
             this.veiculoDataGridView.Size = new System.Drawing.Size(385, 358);
             this.veiculoDataGridView.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "id_motivo";
+            this.dataGridViewTextBoxColumn1.HeaderText = "id_motivo";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "veiculo";
+            this.dataGridViewTextBoxColumn2.HeaderText = "veiculo";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "placa";
+            this.dataGridViewTextBoxColumn3.HeaderText = "placa";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // veiculoBindingSource
+            // 
+            this.veiculoBindingSource.DataMember = "veiculo";
+            this.veiculoBindingSource.DataSource = this.controle_ocorrenciasDataSet;
+            // 
+            // controle_ocorrenciasDataSet
+            // 
+            this.controle_ocorrenciasDataSet.DataSetName = "controle_ocorrenciasDataSet";
+            this.controle_ocorrenciasDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label1
             // 
@@ -102,35 +131,6 @@
             this.txtbx_placa.TabIndex = 5;
             this.txtbx_placa.TextChanged += new System.EventHandler(this.txtbx_placa_TextChanged);
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "id_motivo";
-            this.dataGridViewTextBoxColumn1.HeaderText = "id_motivo";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "veiculo";
-            this.dataGridViewTextBoxColumn2.HeaderText = "veiculo";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "placa";
-            this.dataGridViewTextBoxColumn3.HeaderText = "placa";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // veiculoBindingSource
-            // 
-            this.veiculoBindingSource.DataMember = "veiculo";
-            this.veiculoBindingSource.DataSource = this.controle_ocorrenciasDataSet;
-            // 
-            // controle_ocorrenciasDataSet
-            // 
-            this.controle_ocorrenciasDataSet.DataSetName = "controle_ocorrenciasDataSet";
-            this.controle_ocorrenciasDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // veiculoTableAdapter
             // 
             this.veiculoTableAdapter.ClearBeforeFill = true;
@@ -138,8 +138,10 @@
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.func_outros_setoresTableAdapter = null;
             this.tableAdapterManager.motoristaTableAdapter = null;
             this.tableAdapterManager.ocorrenciaTableAdapter = null;
+            this.tableAdapterManager.setor_motoTableAdapter = null;
             this.tableAdapterManager.setoresTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = Controle_de_Ocorrencias.controle_ocorrenciasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.veiculoTableAdapter = this.veiculoTableAdapter;
