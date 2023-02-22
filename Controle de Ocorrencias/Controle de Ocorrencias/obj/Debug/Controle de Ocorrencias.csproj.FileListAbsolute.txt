@@ -14,3 +14,6 @@ C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrenc
 C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle_de_Ocorrencias.frm_consultVeiculo.resources
 C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle_de_Ocorrencias.frm_cadMotorista.resources
 C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle_de_Ocorrencias.frm_consultMotorista.resources
+C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle_de_Ocorrencias.frm_cadFun_outrosSetores.resources
+C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle_de_Ocorrencias.frm_consultFunc_outrosSetores.resources
+C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle_de_Ocorrencias.frm_abrirOcorrencia.resources

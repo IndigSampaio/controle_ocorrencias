@@ -57,6 +57,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_abrirOcorrencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_abrirOcorrencia.Designer.cs">
+      <DependentUpon>frm_abrirOcorrencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_cadFun_outrosSetores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cadFun_outrosSetores.Designer.cs">
+      <DependentUpon>frm_cadFun_outrosSetores.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_cadMotorista.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +93,12 @@
     <Compile Include="frm_consulSetor.Designer.cs">
       <DependentUpon>frm_consulSetor.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_consultFunc_outrosSetores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_consultFunc_outrosSetores.Designer.cs">
+      <DependentUpon>frm_consultFunc_outrosSetores.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_consultMotorista.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +116,12 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_abrirOcorrencia.resx">
+      <DependentUpon>frm_abrirOcorrencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_cadFun_outrosSetores.resx">
+      <DependentUpon>frm_cadFun_outrosSetores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_cadMotorista.resx">
       <DependentUpon>frm_cadMotorista.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_consulSetor.resx">
       <DependentUpon>frm_consulSetor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_consultFunc_outrosSetores.resx">
+      <DependentUpon>frm_consultFunc_outrosSetores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_consultMotorista.resx">
       <DependentUpon>frm_consultMotorista.cs</DependentUpon>

@@ -33,6 +33,8 @@
             this.btn_cadVeic = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_cadSetor
@@ -47,7 +49,7 @@
             // 
             // btn_cadVeic
             // 
-            this.btn_cadVeic.Location = new System.Drawing.Point(12, 217);
+            this.btn_cadVeic.Location = new System.Drawing.Point(12, 299);
             this.btn_cadVeic.Name = "btn_cadVeic";
             this.btn_cadVeic.Size = new System.Drawing.Size(196, 96);
             this.btn_cadVeic.TabIndex = 1;
@@ -62,7 +64,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 342);
+            this.button1.Location = new System.Drawing.Point(12, 401);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(196, 96);
             this.button1.TabIndex = 2;
@@ -70,11 +72,33 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(12, 197);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(196, 96);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Cadastrar Funcionarios de Outros Setores";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(463, 322);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(196, 96);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "Abrir Ocorrencia";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 741);
+            this.ClientSize = new System.Drawing.Size(1122, 741);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_cadVeic);
             this.Controls.Add(this.btn_cadSetor);
@@ -92,6 +116,8 @@
         private System.Windows.Forms.Button btn_cadVeic;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
 

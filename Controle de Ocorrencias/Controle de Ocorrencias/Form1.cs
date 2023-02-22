@@ -39,5 +39,17 @@ namespace Controle_de_Ocorrencias
             frm_cadMotorista cadMotorista = new frm_cadMotorista();
             cadMotorista.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frm_cadFun_outrosSetores outrosSetores = new frm_cadFun_outrosSetores();
+            outrosSetores.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            frm_abrirOcorrencia abrirOcorrencia = new frm_abrirOcorrencia();
+            abrirOcorrencia.ShowDialog();
+        }
     }
 }
