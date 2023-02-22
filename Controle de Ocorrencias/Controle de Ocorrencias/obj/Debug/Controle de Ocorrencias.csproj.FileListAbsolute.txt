@@ -1,0 +1,12 @@
+C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\bin\Debug\Controle de Ocorrencias.exe.config
+C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\bin\Debug\Controle de Ocorrencias.exe
+C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\bin\Debug\Controle de Ocorrencias.pdb
+C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle de Ocorrencias.csprojAssemblyReference.cache
+C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle_de_Ocorrencias.Form1.resources
+C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle_de_Ocorrencias.frm_cadSetor.resources
+C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle_de_Ocorrencias.Properties.Resources.resources
+C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle de Ocorrencias.csproj.GenerateResource.cache
+C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle de Ocorrencias.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle de Ocorrencias.exe
+C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle de Ocorrencias.pdb
+C:\Users\Gabriel\Desktop\ocorrencia\Controle de Ocorrencias\Controle de Ocorrencias\obj\Debug\Controle_de_Ocorrencias.frm_consulSetor.resources
