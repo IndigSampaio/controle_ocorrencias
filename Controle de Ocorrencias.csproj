@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EB3BBF5E-7DC6-41DE-88C3-26741CBB69FB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Controle_de_Ocorrencias</RootNamespace>
+    <AssemblyName>Controle de Ocorrencias</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Gabriel\Desktop\ocorrencia\controle_de_ocorrencias\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://goldturismoefretamentos.online/controle_de_ocorrencias/</UpdateUrl>
+    <ProductName>Controle de ocorrencias</ProductName>
+    <PublisherName>Pedro Sampaio</PublisherName>
+    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A614364995E2BAEEC89143E71625332711A63D33</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Controle de Ocorrencias_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="controle_ocorrenciasDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_ocorrenciasDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frm_abrirOcorrencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_abrirOcorrencia.Designer.cs">
+      <DependentUpon>frm_abrirOcorrencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_imprimir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_imprimir.Designer.cs">
+      <DependentUpon>frm_imprimir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_menu.Designer.cs">
+      <DependentUpon>frm_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_cadFun_outrosSetores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cadFun_outrosSetores.Designer.cs">
+      <DependentUpon>frm_cadFun_outrosSetores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_cadMotorista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cadMotorista.Designer.cs">
+      <DependentUpon>frm_cadMotorista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_cadSetor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cadSetor.Designer.cs">
+      <DependentUpon>frm_cadSetor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_cadVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cadVeiculo.Designer.cs">
+      <DependentUpon>frm_cadVeiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_consulOcorrencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_consulOcorrencia.Designer.cs">
+      <DependentUpon>frm_consulOcorrencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_consulSetor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_consulSetor.Designer.cs">
+      <DependentUpon>frm_consulSetor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_consultFunc_outrosSetores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_consultFunc_outrosSetores.Designer.cs">
+      <DependentUpon>frm_consultFunc_outrosSetores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_consultMotorista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_consultMotorista.Designer.cs">
+      <DependentUpon>frm_consultMotorista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_consultVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_consultVeiculo.Designer.cs">
+      <DependentUpon>frm_consultVeiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_abrirOcorrencia.resx">
+      <DependentUpon>frm_abrirOcorrencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_imprimir.resx">
+      <DependentUpon>frm_imprimir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu.resx">
+      <DependentUpon>frm_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_cadFun_outrosSetores.resx">
+      <DependentUpon>frm_cadFun_outrosSetores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_cadMotorista.resx">
+      <DependentUpon>frm_cadMotorista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_cadSetor.resx">
+      <DependentUpon>frm_cadSetor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_cadVeiculo.resx">
+      <DependentUpon>frm_cadVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_consulOcorrencia.resx">
+      <DependentUpon>frm_consulOcorrencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_consulSetor.resx">
+      <DependentUpon>frm_consulSetor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_consultFunc_outrosSetores.resx">
+      <DependentUpon>frm_consultFunc_outrosSetores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_consultMotorista.resx">
+      <DependentUpon>frm_consultMotorista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_consultVeiculo.resx">
+      <DependentUpon>frm_consultVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Controle de Ocorrencias_TemporaryKey.pfx" />
+    <None Include="controle_ocorrenciasDataSet.xsc">
+      <DependentUpon>controle_ocorrenciasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="controle_ocorrenciasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>controle_ocorrenciasDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="controle_ocorrenciasDataSet.xss">
+      <DependentUpon>controle_ocorrenciasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-analytic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-inserir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\003-ponto-de-verificacao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\004-excluir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\005-crio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
